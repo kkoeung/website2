@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cinzel:wght@600&family=Merienda&family=Monoton&family=Poppins:wght@300;400&family=Smokum&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: url("../images/baner888.jpg") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.menu, .login, .slot, .search, .lottery{
+  font-family: 'Bree Serif', serif;
+}
+
+
+.play{
+    background-color: #4B4453;
+    color: #1fe8b6;
+    border: 1px solid #1fe8b6;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+}
+.play::before,
+.play::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: inherit;
+    transition: all .5s;
+}
+.play::before{
+    top: -10px;
+    left: -10px;
+    border-width: 1px 0 0 1px;
+    border-radius: 15px;
+}
+.play::after{
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 1px 1px 0;
+    border-radius: 15px;
+}
+.play:hover{
+    color: #fff;
+}
+.play:hover::before,
+.play:hover::after{
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+}
+
+.login{
+    border: 2px solid #3c67e3;
+    cursor: pointer;
+}
+.login:hover{
+    color: #00C9A7;
+    animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 10px #00C9A7, 0 0 25px pink;
+    }
+}
+
+/* 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  } */
+
+
+
+
+
+  .mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
+
+
+
+  /* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hoverable {
+    position: static;
+  }
+
+  .hoverable > a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .hoverable:hover .mega-menu {
+    display: block;
+  }
+
+
+  /* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .toggleable > label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+  .toggle-input:not(checked) ~ .mega-menu {
+    display: none;
+  }
+
+  .toggle-input:checked ~ .mega-menu {
+    display: block;
+  }
+
+  .toggle-input:checked + label {
+    color: white;
+    background: #2c5282; /*@apply bg-blue-800 */
+  }
+
+  .toggle-input:checked ~ label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+
+  
