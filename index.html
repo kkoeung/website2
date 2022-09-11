@@ -25,8 +25,8 @@
     <section class="container w-full h-auto overflow-hidden ">
         <!-- header -->
         <div class="header sticky top-0 left-0 flex flex-row justify-around w-full p-2 bg-blue-800 z-50">
-            <div class="flex items-center cursor-pointer">
-                <img src="./images/logo.png" class="w-32 h-auto">
+            <div class="logo flex items-center cursor-pointer">
+                <img src="./images/logo.png" class="logo-image w-32 h-auto">
             </div>
 
             <ul class="header-item flex flex-row justify-evenly flex-wrap w-2/5 items-center text-slate-50 cursor-pointer">
@@ -36,7 +36,7 @@
                     <span class="menu hover:text-purple-400 text-lg relative block py-8">Lottery</span>
                     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl" style="background-image:url(./images/blue\ background.jpg)">
                         <div class="flex justify-center">
-                            <div class="w-10/12 flex flex-col justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
+                            <div class="w-10/12 flex flex-row justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
                                 <!--# 1 #-->
                                 <div class="dropdown-item bg-blue-800 rounded w-2/6">
                                     <div class="m-4">
@@ -403,30 +403,29 @@
                 </div>
             </ul>
 
-            <div class="flex items-center flex-wrap text-lg text-slate-50">
-                <a href="login.html" target="_blank" class="login m-1 bg-purple-600 px-8 py-2 rounded-xl">Login</a>
-                <a href="login.html" target="_blank" class="login m-1 bg-purple-600 px-7 py-2 rounded-xl">Signup</a>
+            <div class="login-signup flex items-center flex-wrap text-slate-50">
+                <a href="login.html" target="_blank" class="login log m-1 bg-purple-600 px-8 py-2 rounded-xl text-lg">Login</a>
+
+                <a href="login.html" target="_blank" class="login sig m-1 bg-purple-600 px-7 py-2 rounded-xl text-lg">Signup</a>
             </div>
 
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    
                     <ul class="flex flex-col flex-wrap items-center text-slate-50 cursor-pointer">
-
                     <!--#1# Lottery -->
                     <div class="hoverable hover:bg-blue-800 hover:text-white">
                         <span class="menu hover:text-purple-400 text-lg relative block py-4">Lottery</span>
-                        <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl" style="background-image:url(./images/blue\ background.jpg)">
+                        <div class="background p-6 mega-menu mb-16 sm:mb-0 shadow-xl" style="background-image:url(./images/blue\ background.jpg)" class="background">
                             <div class="flex justify-center">
-                                <div class="w-10/12 flex flex-row justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
+                                <div class="w-10/12 flex flex-col justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
                                     <!--# 1 #-->
                                     <div class="dropdown-item bg-blue-800 rounded w-2/6">
                                         <div class="m-4">
                                             <div class="flex items-center w-36 p-4">
                                                 <img src="https://www.playnow.com/resources/images/lottery/icons/l649-goldball-app-icon.svg?v=1" class="rounded">
                                             </div>
-                                            <div class="flex items-center py-3">
+                                            <div class="exciting flex items-center py-3">
                                                 <a href="#" class="text-white border-b-2 border-blue-300 hover:text-blue-300 font-bold pl-4">Exciting changes to Lotto 6/49</a>
                                             </div>
                                             <p class="text-gray-100 text-sm pl-4 text-justify">text-sm text-gray-400 text-left">On Sept. 11, 2022, Lotto 6/49 will feature a new Gold Ball Jackpot with updated prizes.</p>
@@ -792,36 +791,42 @@
         
         <!-- Anamation banner -->
         </div>
-        <header class=" flex items-end mt-3  h-80">
-            <div class="absolute flex flex-end items-center z-30 p-4 text-lg text-white bg-opacity-50 rounded-xl">
-                <span class="play m-4 px-4 py-2 rounded-xl cursor-pointer ">Play Game</span>
-                <span class="play m-4 px-4 py-2 rounded-xl cursor-pointer">Play Demo</span>
+        <header class="play relative flex items-end mt-3 h-80">
+            <div class="play-content absolute flex z-30 p-4 text-lg text-white bg-opacity-50 rounded-xl">
+                <span class="play-item m-4 px-4 py-2 rounded-xl cursor-pointer ">Play Game</span>
+
+                <span class="play-item m-4 px-4 py-2 rounded-xl cursor-pointer">Play Demo</span>
             </div>
             <video autoplay loop muted class="absolute z-10">
               <source src="./video/website banner op2.mp4" type="video/mp4" />
             </video>
         </header>
+        <header class="play relative w-full flex justify-center items-start">
+            <div class="play-contents absolute flex z-30 py-4 text-lg text-white bg-opacity-50 rounded-xl bg-blue-800">
+                <span class="play-item m-6 px-4 py-2 rounded-xl cursor-pointer ">Play Game</span>
+                <span class="play-item m-6 px-4 py-2 rounded-xl cursor-pointer">Play Demo</span>
+            </div>
+        </header>
 
         <!-- Search form -->
-        <form class="flex justify-center items-center ">
-            <input class="border bg-purple-600 border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent px-8 py-2 rounded m-2" placeholder="Search..." required>
-            <button class="search bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 px-4 py-2 rounded text-white">
-              Search
+        <form class="form flex justify-center items-center ">
+            <input class="form-input border bg-purple-600 border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent px-8 py-2 rounded-l-lg m-2" placeholder="Search..." required>
+            <button class="form-button search bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 px-4 py-2 rounded-r-lg text-white"> Search
             </button>
         </form>
 
         <!-- game card -->
         <div class="card flex flex-col items-center mt-8 w-full">
             <div class="w-11/12 font-bold text-white text-4xl">
-                <span class="slot hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Slot</span>
+                <span class="slots hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Slot</span>
             </div>
             <div class="flex flex-col items-center flex-wrap w-full">
                 <div class="card-content w-11/12 flex flex-row flex-nowrap m-2">
                     <!-- 1 -->
-                    <div class="flex w-1/6 m-1">
-                        <div class="rounded shadow-lg w-full h-full">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/88.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                    <div class="card-item flex w-1/6 m-1">
+                        <div class="rounded shadow-lg w-full h-auto">
+                            <div class="card-itemed  relative overflow-hidden bg-no-repeat bg-cover rounded-md">
+                                <img src="./images/image/1.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Super Jackport</h5>
@@ -829,10 +834,10 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/2.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/2.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Jackport</h5>
@@ -840,10 +845,10 @@
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/3.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/3.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">21 Macau</h5>
@@ -851,10 +856,10 @@
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/4.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/4.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Texas</h5>
@@ -862,10 +867,10 @@
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/5.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/5.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Dragon</h5>
@@ -873,10 +878,10 @@
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/6.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/6.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Magic Casino</h5>
@@ -886,12 +891,12 @@
                 </div>
 
                 <!-- #2# -->
-                <div class="card-content w-11/12 flex flex-row items-center m-2">
+                <div class="card-content w-11/12 flex flex-row flex-nowrap m-2">
                     <!-- 1 -->
-                    <div class="flex w-1/6 m-1">
+                    <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-full">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/7.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded-md">
+                                <img src="./images/image/7.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">The King</h5>
@@ -899,10 +904,10 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/8.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/8.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Disco Mania</h5>
@@ -910,10 +915,10 @@
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/9.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/9.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">5 of a Kind</h5>
@@ -921,10 +926,10 @@
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/10.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/10.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">BlackJack</h5>
@@ -932,10 +937,10 @@
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/11.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/11.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Roaster</h5>
@@ -943,10 +948,10 @@
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/12.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/12.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
                                 <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Airy Mix</h5>
@@ -956,79 +961,79 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Jackports -->
+
+        <!--Game card Jackports -->
         <div class="card flex flex-col items-center mt-8 w-full">
             <div class="w-11/12 font-bold text-white text-4xl">
-                <span class="hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Jackport</span>
+                <span class="jackports hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Jackport</span>
             </div>
             <div class="flex flex-col items-center flex-wrap w-full">
-
+                
                 <!-- # 1 # -->
-                <div class="card-content w-11/12 flex flex-row items-center m-2">
+                <div class="card-content w-11/12 flex flex-row flex-nowrap m-2">
                    <!-- 1 -->
-                    <div class="flex w-1/6 m-1">
-                        <div class="rounded shadow-lg w-full h-full">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/13.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                    <div class="card-item flex w-1/6 m-1">
+                        <div class="rounded shadow-lg w-full h-auto">
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/13.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Miner Clicker</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Miner Clicker</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/14.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/14.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Ron Don-Don</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ron Don-Don</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/15.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/15.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Crodds</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Crodds</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/16.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/16.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Lords of Carnage</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Lords of Carnage</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/17.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/17.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Army Rage</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Army Rage</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/18.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/18.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Ember Knights</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ember Knights</h5>
                             </div>
                         </div>
                     </div>
@@ -1037,68 +1042,68 @@
                 <!-- # 2 # -->
                 <div class="card-content w-11/12 flex flex-row items-center m-2">
                     <!-- 1 -->
-                    <div class="flex w-1/6 m-1">
+                    <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-full">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/19.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded-md">
+                                <img src="./images/image/19.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">EOS</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">EOS</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/20.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/20.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Ungoro</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ungoro</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/21.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/21.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Last 2 Temple</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Last 2 Temple</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/22.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/22.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Gama Lords</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Gama Lords</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/23.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/23.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Pirate</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pirate</h5>
                             </div>
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="flex w-1/6  m-1">
+                    <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/24.jpg" class="w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                            <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
+                                <img src="./images/image/24.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="text-green-500 text-md font-medium text-center break-all ">Pirate Race</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pirate Race</h5>
                             </div>
                         </div>
                     </div>
@@ -1106,31 +1111,31 @@
             </div>
         </div>
 
-        <div class="pay bg-gray-600 h-44 flex justify-center items-center">
-            <div class="pay-item w-6/12">
-                <div class="flex flex-row justify-around">
+        <div class="payment bg-gray-600 h-44 flex justify-center items-center">
+            <div class="pay-content w-6/12">
+                <div class="pay-item flex flex-row justify-around">
                     <a href="#">
-                        <img src="./images/visa.png" class="w-24 hover:opacity-50 transition duration-300 ease-in-out">
+                        <img src="./images/visa.png" class="pay-image w-24 hover:opacity-50 transition duration-300 ease-in-out">
                     </a>
                     <a href="#">
-                        <img src="./images/paypal.png" class="w-24 hover:opacity-50 transition duration-300 ease-in-out">
+                        <img src="./images/paypal.png" class="pay-image w-24 hover:opacity-50 transition duration-300 ease-in-out">
                     </a>
                     <a href="#">
-                        <img src="./images/amex.png" class="w-24 hover:opacity-50 transition duration-300 ease-in-out">
+                        <img src="./images/amex.png" class="pay-image w-24 hover:opacity-50 transition duration-300 ease-in-out">
                     </a>
                     <a href="#">
-                        <img src="./images/credit-card.png" class="w-24 hover:opacity-50 transition duration-300 ease-in-out">
+                        <img src="./images/credit-card.png" class="pay-image w-24 hover:opacity-50 transition duration-300 ease-in-out">
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="footer bg-violet-900">
-            <div class="footer-contain flex flex-row justify-around text-white pt-8">
+            <div class="footer-content flex flex-row justify-around text-white pt-8">
                 <div class="footer-item">
                     <div class="">
                         <a href="#">
-                            <h5 class="text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Need Help?</h5>
+                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Need Help?</h5>
                         </a>
                     </div>
                     <div class="inline-block pt-4 hover:text-purple-400">
@@ -1139,7 +1144,7 @@
                             <span>Live Chat</span>
                         </a>
                     </div>
-                    <div class="flex flex-col leading-9 text-md">
+                    <div class="footer-text flex flex-col leading-9 text-md">
                         <a href="#">
                             <span class="tracking-wider hover:text-purple-400">Need Help?</span>
                         </a>
@@ -1159,27 +1164,28 @@
                     </div>
 
                 </div>
+
                 <div class="footer-item">
                     <div class="">
                         <a href="#">
-                            <h5 class="text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">About Playnow</h5>
+                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">About Playnow</h5>
                         </a>
                     </div>
-                    <div class="flex flex-col pt-4 leading-9 text-md">
+                    <div class="footer-text flex flex-col leading-9 text-md">
                         <a href="#">
-                            <span class="hover:text-purple-400">Winners</span>
+                            <span class="tracking-wider hover:text-purple-400">Winners</span>
                         </a>
                         <a href="#">
-                            <span class="hover:text-purple-400">Our Security Commitments</span>
+                            <span class="tracking-wider hover:text-purple-400">Our Security Commitments</span>
                         </a>
                         <a href="#">
-                            <span class="hover:text-purple-400">Privacy</span>
+                            <span class="tracking-wider hover:text-purple-400">Privacy</span>
                         </a>
                         <a href="#">
-                            <span class="hover:text-purple-400">Legal</span>
+                            <span class="tracking-wider hover:text-purple-400">Legal</span>
                         </a>
                         <a href="#">
-                            <span class="hover:text-purple-400">GameSense</span>
+                            <span class="tracking-wider hover:text-purple-400">GameSense</span>
                         </a>
                     </div>
                 </div>
@@ -1187,10 +1193,10 @@
                 <div class="footer-item">
                     <div class="">
                         <a href="#">
-                            <h5 class="text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Join Us</h5>
+                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Join Us</h5>
                         </a>
                     </div>
-                    <div class="flex flex-col text-center pt-4">
+                    <div class="footer-icon flex flex-col text-center pt-4">
                         <a href="#">
                             <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-facebook"></ion-icon></span>
                         </a>
@@ -1222,101 +1228,5 @@
     </script>
 </body>
 </html>
-
-
-<!-- <div class="dropdown">
-                    <span class="mr-1 text-xl font-bold">Lottery</span>
-                      <ul class="dropdown-menu absolute hidden text-gray-700 pt-4">
-                        <li class="flex flex-row justify-around rounded-t text-white bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap bg-cover bg-center" style="background-image:url(./images/blue\ background.jpg)">
-                            <div class="dropdown-item bg-blue-800 rounded  w-2/6">
-                                <div class="p-4">
-                                    <img src="https://www.playnow.com/resources/images/lottery/icons/l649-goldball-app-icon.svg?v=1">
-                                    <span class="text-sm font-bold">Exciting changes to Lotto 6/49</span>
-                                    <p class="text-sm text-gray-400 text-left">On Sept. 11, 2022, Lotto 6/49 will feature a new Gold Ball Jackpot with updated prizes.</p>
-                                    <span class="text-sm font-bold">See what's new -></span>
-                                </div>
-                            </div>
-                        
-                            <div class="flex flex-col w-2/6 p-4">
-                                <div class="flex flex-row items-center m-4">
-                                    <div class="bg-blue-800 rounded px-2 py-1">
-                                        <img src="https://www.playnow.com/resources/images/icons/font-awesome/solid/ticket-alt.svg?v=1" class="w-8">
-                                    </div>
-                                    <span class="text-sm text-green-400 font-bold m-1">Play Lottery</span>
-                                </div> 
-                                <hr>
-                                <div class="flex flex-col text-sm font-bold m-4 leading-10">
-                                    <span>Buy Tickets</span>
-                                    <span>Check Results</span>
-                                    <span>Play Keno</span>
-                                </div>
-                            </div>
-                        
-                            <div class="">
-                                <div class="flex flex-col p-4">
-                                    <div class="flex items-center flex-row m-4">
-                                        <div class="flex items-center rounded bg-white w-14 px-1 py-2">
-                                            <img src="https://www.playnow.com/resources/images/lottery/logos/lotto-logo-lg-red.png?v=1">
-                                        </div>
-                                        <span class="text-green-400 text-sm font-bold m-2">Lottery Games</span>
-                                    </div>
-                                    <hr>
-                                    <div class="flex flex-row flex-wrap m-2 mt-6">
-                                        <div class="m-2">
-                                            <div class="bg-gray-400 px-5 py-2 rounded">
-                                                <img src="https://www.playnow.com/resources/images/lottery/banners/lmax-2.0/lmax-2.0-black-text.png?v=1" class="w-20">
-                                            </div>
-                                            <span class="flex justify-center text-sm">Lotto Max</span>
-                                        </div>
-                                        <div class="m-2">
-                                            <div class="bg-gray-400 px-5 py-2 rounded">
-                                                <img src="https://www.playnow.com/resources/images/lottery/winning-numbers/logo-lotto-649.svg?v=1" class="w-20">
-                                            </div>
-                                            <span class="flex justify-center text-sm">Lotto 6/49</span>
-                                        </div>
-                                        <div class="m-2">
-                                            <div class="bg-gray-400 px-5 py-2 rounded">
-                                                <img src="https://www.playnow.com/resources/images/lottery/winning-numbers/logo-bc-49.svg?v=1" class="w-20">
-                                            </div>
-                                            <span class="flex justify-center text-sm">BC/49</span>
-                                        </div>
-                                        <div class="m-2">
-                                            <div class="bg-gray-400 px-5 py-1 rounded">
-                                                <img src="https://www.playnow.com/resources/images/lottery/winning-numbers/logo-daily-grand.svg?v=1" class="w-20">
-                                            </div>
-                                            <span class="flex justify-center text-sm">Daily Grand</span>
-                                        </div>
-                                        <div class="m-2">
-                                            <div class="bg-gray-400 px-5 py-4 rounded">
-                                                <img src="https://www.playnow.com/resources/images/keno/keno-logo.png?v=1" class="w-20">
-                                            </div>
-                                            <span class="flex justify-center text-sm">Keno</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div> -->
-
-
-<!-- <div class="header flex w-full bg-purple-400">
-            <div class="flex justify-center items-center w-1/5 h-24 tex-white text-xl font-bold">
-                <img src="./images/logo.png" class="w-36 h-auto">
-            </div>
-
-            <ul class="flex justify-evenly items-center w-3/5 h-24 tex-white text-xl font-bold">
-                <li class="text-pink-700">Lottery</li>
-                <li class="text-pink-700">Casino</li>
-                <li class="text-pink-700">Sports</li>
-                <li class="text-pink-700">Poker</li>
-                <li class="text-pink-700">Bingo</li>
-            </ul>
-
-            <div class="flex items-center w-1/5 h-24 tex-white text-xl font-bold">
-                <span class="login text-pink-700 m-1 bg-purple-500 px-7 py-2 rounded-xl">Login</span>
-                <span class="login text-pink-700 m-1 bg-purple-500 px-5 py-2 rounded-xl">Signup</span>
-            </div>
-        </div> -->
 
         
