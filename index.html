@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section class="container w-full h-auto overflow-hidden ">
+    <section class="container w-full h-full overflow-hidden">
         <!-- header -->
         <div class="header sticky top-0 left-0 flex flex-row justify-around w-full p-2 bg-blue-800 z-50">
             <div class="logo flex items-center cursor-pointer">
-                <img src="./images/logo.png" class="logo-image w-32 h-auto">
+                <img src="./images/GH888 V2.0.png" class="logo-image w-28 h-auto">
             </div>
 
             <ul class="header-item flex flex-row justify-evenly flex-wrap w-2/5 items-center text-slate-50 cursor-pointer">
@@ -409,18 +409,18 @@
                 <a href="login.html" target="_blank" class="login sig m-1 bg-purple-600 px-7 py-2 rounded-xl text-lg">Signup</a>
             </div>
 
-            <div id="myNav" class="overlay">
+            <div id="myNav" class="close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <ul class="flex flex-col flex-wrap items-center text-slate-50 cursor-pointer">
+                    <ul class="flex flex-col flex-wrap items-center text-slate-50 cursor-pointer h-full">
                     <!--#1# Lottery -->
-                    <div class="hoverable hover:bg-blue-800 hover:text-white">
-                        <span class="menu hover:text-purple-400 text-lg relative block py-4">Lottery</span>
-                        <div class="background p-6 mega-menu mb-16 sm:mb-0 shadow-xl" style="background-image:url(./images/blue\ background.jpg)" class="background">
+                    <li class="hoverable hover:bg-blue-800 hover:text-white h-full">
+                        <span class="menu hover:text-purple-400 text-lg relative block py-4 h-full">Lottery</span>
+                        <div class="background h-full p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-blue-500">
                             <div class="flex justify-center">
-                                <div class="w-10/12 flex flex-col justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
+                                <div class="w-10/12 h-full flex flex-col justify-around rounded-t text-white px-4 block whitespace-no-wrap bg-cover bg-center">
                                     <!--# 1 #-->
-                                    <div class="dropdown-item bg-blue-800 rounded w-2/6">
+                                    <div class="dropdown-item bg-blue-800 rounded w-2/6 h-full">
                                         <div class="m-4">
                                             <div class="flex items-center w-36 p-4">
                                                 <img src="https://www.playnow.com/resources/images/lottery/icons/l649-goldball-app-icon.svg?v=1" class="rounded">
@@ -497,10 +497,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- #2# Casino menu -->
-                    <div class="hoverable hover:bg-blue-800 hover:text-white">
+                    <li class="hoverable hover:bg-blue-800 hover:text-white">
                         <span class="menu hover:text-purple-400 text-lg relative block py-4">Casino</span>
                         <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800 " style="background-image:url(./images/blue\ background.jpg)">
                             
@@ -586,11 +586,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                         </div>
+                    </li>
 
                     <!-- #3# Sports menu -->
-                    <div class="hoverable hover:bg-blue-800 hover:text-white">
+                    <li class="hoverable hover:bg-blue-800 hover:text-white">
                         <span class="menu hover:text-purple-400 text-lg relative block py-4">Sports</span>
                         <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800 " style="background-image:url(./images/blue\ background.jpg)">
                             <div class="flex justify-center">
@@ -650,10 +650,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- #4# Poker -->
-                    <div class="hoverable hover:bg-blue-800 hover:text-white">
+                    <li class="hoverable hover:bg-blue-800 hover:text-white">
                         <span class="menu hover:text-purple-400 text-lg relative block py-4">Poker</span>
                         <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800 " style="background-image:url(./images/blue\ background.jpg)">
                             
@@ -725,10 +725,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!--#5# Bingo -->
-                    <div class="hoverable hover:bg-blue-800 hover:text-white">
+                    <li class="hoverable hover:bg-blue-800 hover:text-white">
                         <span class="menu hover:text-purple-400 text-lg relative block py-4">Binggo</span>
                         <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800 " style="background-image:url(./images/blue\ background.jpg)">
                             <div class="flex justify-center">
@@ -782,7 +782,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </li>
                 </ul>
                 </div>
             </div>
@@ -802,7 +802,7 @@
             </video>
         </header>
         <header class="play relative w-full flex justify-center items-start">
-            <div class="play-contents absolute flex z-30 py-4 text-lg text-white bg-opacity-50 rounded-xl bg-blue-800">
+            <div class="play-contents absolute flex z-30 py-4 px-6 text-lg text-white bg-opacity-50 rounded-xl bg-blue-800">
                 <span class="play-item m-6 px-4 py-2 rounded-xl cursor-pointer ">Play Game</span>
                 <span class="play-item m-6 px-4 py-2 rounded-xl cursor-pointer">Play Demo</span>
             </div>
@@ -826,10 +826,10 @@
                     <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed  relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/1.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                                <img src="./images/gh888/1.jfif" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Super Jackport</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -837,10 +837,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/2.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/2.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Jackport</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -848,10 +848,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/3.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/3.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">21 Macau</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -859,10 +859,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/4.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/4.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Texas</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -870,10 +870,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/5.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/5.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Dragon</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -881,10 +881,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/6.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/6.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Magic Casino</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -896,10 +896,10 @@
                     <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-full">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/7.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                                <img src="./images/gh888/19.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">The King</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -907,10 +907,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/8.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/20.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Disco Mania</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -918,10 +918,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/9.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/21.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">5 of a Kind</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -929,10 +929,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/10.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/16.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">BlackJack</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -940,10 +940,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/11.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/17.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Roaster</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -951,10 +951,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/12.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888/18.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Airy Mix</h5>
+                                <h5 class="slot text-green-500 text-md font-medium text-center break-all ">Slot</h5>
                             </div>
                         </div>
                     </div>
@@ -962,10 +962,10 @@
             </div>
         </div>
 
-        <!--Game card Jackports -->
+        <!--Game card Pocker -->
         <div class="card flex flex-col items-center mt-8 w-full">
             <div class="w-11/12 font-bold text-white text-4xl">
-                <span class="jackports hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Jackport</span>
+                <span class="jackports hover:underline underline-offset-8 hover:decoration-sky-500 cursor-pointer">Pocker</span>
             </div>
             <div class="flex flex-col items-center flex-wrap w-full">
                 
@@ -975,10 +975,10 @@
                     <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/13.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/1.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Miner Clicker</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -986,10 +986,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/14.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/2.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ron Don-Don</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -997,10 +997,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/15.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/3.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Crodds</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1008,10 +1008,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/16.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/4.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Lords of Carnage</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1019,10 +1019,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/17.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/5.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Army Rage</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1030,10 +1030,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/18.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/6.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ember Knights</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1045,10 +1045,10 @@
                     <div class="card-item flex w-1/6 m-1">
                         <div class="rounded shadow-lg w-full h-full">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded-md">
-                                <img src="./images/image/19.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
+                                <img src="./images/gh888icon/7.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded-md" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">EOS</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1056,10 +1056,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/20.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/8.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Ungoro</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1067,10 +1067,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/21.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/9.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Last 2 Temple</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1078,10 +1078,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/22.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/10.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Gama Lords</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1089,10 +1089,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/23.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/11.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pirate</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker</h5>
                             </div>
                         </div>
                     </div>
@@ -1100,10 +1100,10 @@
                     <div class="card-item flex w-1/6  m-1">
                         <div class="rounded shadow-lg w-full h-auto">
                             <div class="card-itemed relative overflow-hidden bg-no-repeat bg-cover rounded">
-                                <img src="./images/image/24.jpg" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
+                                <img src="./images/gh888icon/12.png" class="image w-full h-36 hover:scale-110 transition duration-300 ease-in-out rounded" alt="Louvre" />
                             </div>
                             <div class="p-2">
-                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pirate Race</h5>
+                                <h5 class="jackport text-green-500 text-md font-medium text-center break-all ">Pocker/h5>
                             </div>
                         </div>
                     </div>
@@ -1113,7 +1113,7 @@
 
         <div class="payment bg-gray-600 h-44 flex justify-center items-center">
             <div class="pay-content w-6/12">
-                <div class="pay-item flex flex-row justify-around">
+                <div class="pay-item flex justify-around flex-row">
                     <a href="#">
                         <img src="./images/visa.png" class="pay-image w-24 hover:opacity-50 transition duration-300 ease-in-out">
                     </a>
@@ -1132,7 +1132,7 @@
 
         <div class="footer bg-violet-900">
             <div class="footer-content flex flex-row justify-around text-white pt-8">
-                <div class="footer-item">
+                <div class="footer-item w-3/4">
                     <div class="">
                         <a href="#">
                             <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Need Help?</h5>
@@ -1160,18 +1160,16 @@
                         <a href="#">
                             <span class="tracking-wider hover:text-purple-400">Share Your Feedback</span>
                         </a>
-                        
                     </div>
-
                 </div>
 
-                <div class="footer-item">
+                <div class="footer-item w-3/4">
                     <div class="">
                         <a href="#">
-                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">About Playnow</h5>
+                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500 pt-4">About Playnow</h5>
                         </a>
                     </div>
-                    <div class="footer-text flex flex-col leading-9 text-md">
+                    <div class="footer-text flex flex-col flex-wrap leading-9 text-md">
                         <a href="#">
                             <span class="tracking-wider hover:text-purple-400">Winners</span>
                         </a>
@@ -1179,38 +1177,38 @@
                             <span class="tracking-wider hover:text-purple-400">Our Security Commitments</span>
                         </a>
                         <a href="#">
-                            <span class="tracking-wider hover:text-purple-400">Privacy</span>
+                            <span class="tracking-wider hover:text-purple-400">FAQs</span>
                         </a>
                         <a href="#">
-                            <span class="tracking-wider hover:text-purple-400">Legal</span>
+                            <span class="tracking-wider hover:text-purple-400">Contact Us</span>
                         </a>
                         <a href="#">
-                            <span class="tracking-wider hover:text-purple-400">GameSense</span>
+                            <span class="tracking-wider hover:text-purple-400">Share Your Feedback</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="footer-item">
+                <div class="footer-item w-3/4 items-center">
                     <div class="">
                         <a href="#">
-                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500">Join Us</h5>
+                            <h5 class="footer-itemed text-2xl font-bold tracking-wide hover:underline underline-offset-8 hover:decoration-sky-500 pt-4">Join Us</h5>
                         </a>
                     </div>
-                    <div class="footer-icon flex flex-col text-center pt-4">
+                    <div class="footer-icon flex flex-col pt-4">
                         <a href="#">
-                            <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-facebook"></ion-icon></span>
+                            <span class="icon-item text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-facebook"></ion-icon></span>
                         </a>
                         <a href="#">
-                            <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-instagram"></ion-icon></span>
+                            <span class="icon-item text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-instagram"></ion-icon></span>
                         </a>
                         <a href="#">
-                            <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-twitter"></ion-icon></span>
+                            <span class="icon-item text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-twitter"></ion-icon></span>
                         </a>
                         <a href="#">
-                            <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="navigate-circle"></ion-icon></span>
+                            <span class="icon-item text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="navigate-circle"></ion-icon></span>
                         </a>
                         <a href="#">
-                            <span class="text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-youtube"></ion-icon></span>
+                            <span class="icon-item text-black text-3xl text-purple-400 hover:text-green-500"><ion-icon name="logo-youtube"></ion-icon></span>
                         </a>
                     </div>
                 </div>
@@ -1226,7 +1224,25 @@
           document.getElementById("myNav").style.height = "0%";
         }
     </script>
+    <!-- <div class="nav" id="myNav">
+        <div class="main-box">
+            <div onclick="closeNav()" class="close-menu">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div onclick="openNav()" class="open-   menu">
+        <i class="fa fa-bars"></i>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "60%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script> -->
 </body>
 </html>
-
         
