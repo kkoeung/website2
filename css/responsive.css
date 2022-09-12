@@ -2,17 +2,16 @@
     display: none;
     font-size: 30px;
     cursor: pointer;
+    overflow: hidden;
   }
-  .overlay {
+  .close {
     height: 0%;
     width: 100%;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 100;
     top: 0;
     left: 0;
-    /* background-color: purple; */
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background: purple;
     overflow-y: hidden;
     transition: 0.3s;
   }
@@ -26,7 +25,7 @@
     overflow:hidden;
   }
   
-  .overlay a {
+  .close a {
     padding-left: 20px;
     text-decoration: none;
     font-size: 36px;
@@ -35,11 +34,11 @@
     transition: 0.3s;
   }
   
-  .overlay a:hover, .overlay a:focus {
+  .close a:hover, .close a:focus {
     color: #f1f1f1;
   }
   
-  .overlay .closebtn {
+  .close .closebtn {
     position: absolute;
     top: 10px;
     /* right: 45px; */
@@ -47,9 +46,9 @@
   }
   
   @media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
+    .close {overflow-y: auto;}
+    .close a {font-size: 20px}
+    .close .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
@@ -63,12 +62,11 @@
     .container .open{
         display: block!important;
         font-size: 30px;
-        z-index: 100;
-        
+        z-index: 500;
     }
     .background{
         width: 100%;
-        height: 100%;
+        height: 100%!important;
     }
     .dropdown-item{
         width: 100%;
@@ -107,7 +105,8 @@
         display: block!important;
     }
     .play .play-contents .play-item{
-        padding: 8px 20px;
+        margin: 15px!important;
+        padding: 8px 17px;
         font-size: 10px;
     }
 
@@ -147,7 +146,7 @@
     
     /* Payment */
     .payment .pay-content{
-        width: 90%;
+        width: 70%;
 
     }
     .payment .pay-content .pay-item{
@@ -155,9 +154,8 @@
         flex-wrap: wrap;
     }
     .payment .pay-content .pay-item .pay-image{
-        margin-left: 10px;
-        width: 90px;
-        height: 80px;
+        margin: 0 10px;
+        width: 75px;
     }
     .footer .footer-content{
         display: flex;
@@ -177,5 +175,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around!important;
+        font-size: 15px
     }
+
 }
